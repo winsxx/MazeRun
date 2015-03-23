@@ -674,10 +674,10 @@ RectTransform:
   - {fileID: 2003393734}
   m_Father: {fileID: 674778847}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 309, y: -148.75}
-  m_SizeDelta: {x: 618, y: 296.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -.21900177, y: 0}
+  m_SizeDelta: {x: -.440002441, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1541615758
 MonoBehaviour:
