@@ -1,0 +1,12 @@
+Winson
+	- Musuh
+	- Player tambah laser untuk serang
+	- menyimpan dan menampilkan highscore
+
+Edmund
+	- Kumpulkan bomb dan batu termasuk taro objeknya (masuk ke inventori)
+	- Akhir game (kondisi akhir + game offer: darah=0, waktu habis, atau sampai finish, hitung score)
+
+Kevin
+	- Lempar batu, bomb (sama damage dan effect)
+	- Sound Effect + music
