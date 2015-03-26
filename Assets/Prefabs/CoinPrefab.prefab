@@ -240,7 +240,7 @@ GameObject:
   - 65: {fileID: 6504024}
   m_Layer: 0
   m_Name: CoinPrefab
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1611,7 +1611,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104054}
   m_LocalRotation: {x: 0, y: -.207911536, z: 0, w: -.978147626}
-  m_LocalPosition: {x: 130.904007, y: .75, z: 68.0469971}
+  m_LocalPosition: {x: -98.2599945, y: -1.09854507, z: 20.9599991}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404056}

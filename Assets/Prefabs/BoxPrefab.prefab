@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2307206}
   m_Layer: 0
   m_Name: BoxPrefab
-  m_TagString: Untagged
+  m_TagString: BombableWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.117691, y: 1.5, z: 39.7259483}
+  m_LocalPosition: {x: -50.7834282, y: .187502861, z: 53.8273849}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2314116}
   m_Layer: 0
   m_Name: Lubang
-  m_TagString: Untagged
+  m_TagString: Hole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.5475616, y: .0433019102, z: 20.7652206}
+  m_LocalPosition: {x: -89.4226151, y: -1.27249718, z: 7.1623764}
   m_LocalScale: {x: 11.7702436, y: .0433019102, z: 5.48558521}
   m_Children: []
   m_Father: {fileID: 0}
