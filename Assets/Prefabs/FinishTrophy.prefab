@@ -27,7 +27,7 @@ GameObject:
   - 33: {fileID: 3397886}
   - 136: {fileID: 13697886}
   - 23: {fileID: 2397886}
-  - 114: {fileID: 11497886}
+  - 114: {fileID: 11432380}
   m_Layer: 0
   m_Name: FinishTrophy
   m_TagString: Untagged
@@ -122,7 +122,7 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11497886
+--- !u!114 &11432380
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 197886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d238fe6636386453db8d846ecf2ad860, type: 3}
+  m_Script: {fileID: 11500000, guid: 234adceb23b70456b970b3d7940189bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &13697886
