@@ -218,12 +218,10 @@ namespace UnityChan
 		void OnGUI ()
 		{
 			if (isStart){
-			GUI.Box (new Rect (Screen.width - 260, 10, 250, 150), "Interaction");
-			GUI.Label (new Rect (Screen.width - 245, 30, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
-			GUI.Label (new Rect (Screen.width - 245, 50, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
-			GUI.Label (new Rect (Screen.width - 245, 70, 250, 30), "Hit Space key while Stopping : LaserPunch");			;
-			GUI.Label (new Rect (Screen.width - 245, 110, 250, 30), "Left Control : Front Camera");
-			GUI.Label (new Rect (Screen.width - 245, 130, 250, 30), "Alt : LookAt Camera");
+			GUI.Box (new Rect (Screen.width - 260, 160, 250, 120), "Interaction");
+			GUI.Label (new Rect (Screen.width - 245, 190, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
+			GUI.Label (new Rect (Screen.width - 245, 210, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
+			GUI.Label (new Rect (Screen.width - 245, 230, 250, 60), "Hit Space key while Stopping : LaserPunch");			;						
 			}
 		}
 
