@@ -8,7 +8,11 @@ TagManager:
   - Hole
   - Coin
   - Enemy
+<<<<<<< HEAD
   - WhiteBomb
+=======
+  - Bullet
+>>>>>>> 4f5519b0792b468452fe7b6bce7c3ffc408f8cb8
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
