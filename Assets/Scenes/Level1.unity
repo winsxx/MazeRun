@@ -7987,120 +7987,6 @@ Transform:
   - {fileID: 1216037457}
   m_Father: {fileID: 2042175721}
   m_RootOrder: 0
---- !u!1 &569832346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 569832348}
-  - 114: {fileID: 569832347}
-  m_Layer: 0
-  m_Name: Waypoint Network
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &569832347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569832346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2099906888, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dataSerializer:
-    _serializedData: <component version="1.2" type="RAIN.Navigation.Waypoints.WaypointRig"><fields><field
-      value="AlwaysOn" type="RAIN.Core.VisualModeEnum" id="_visualMode" /><field type="RAIN.Navigation.Waypoints.WaypointSet"
-      reference="0" id="_waypointSet" /></fields><references><reference type="RAIN.Navigation.Waypoints.WaypointSet"
-      refcount="1" id="0"><field value="" type="System.String" id="_setName" /><field
-      value="Network" type="RAIN.Navigation.Waypoints.WaypointSet+WaypointSetType"
-      id="_setType" /><field value="0,0.6,0,1" type="UnityEngine.Color" id="_networkColor"
-      /><field value="-0.5" type="System.Single" id="_outlineColorOffset" /><field
-      value="0.4" type="System.Single" id="_selectionColorOffset" /><field type="System.Collections.Generic.List"
-      id="_waypoints" elementtype="RAIN.Navigation.Waypoints.Waypoint"><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="1" id="element0" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="2" id="element1" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="4" id="element2" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="6" id="element3" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="8" id="element4" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="10" id="element5" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="12" id="element6" /><field type="RAIN.Navigation.Waypoints.Waypoint"
-      reference="14" id="element7" /></field><field type="System.Collections.Generic.List"
-      id="_connections" elementtype="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"><field
-      type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection" reference="3"
-      id="element0" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="5" id="element1" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="7" id="element2" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="9" id="element3" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="11" id="element4" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="13" id="element5" /><field type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      reference="15" id="element6" /></field></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="1"><field value="" type="System.String" id="waypointName" /><field
-      value="19.46855,0,12.14986" type="UnityEngine.Vector3" id="position" /><field
-      value="0.5" type="System.Single" id="range" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="2"><field value="" type="System.String" id="waypointName" /><field
-      value="20.43423,0,13.50888" type="UnityEngine.Vector3" id="position" /><field
-      value="0.5" type="System.Single" id="range" /></reference><reference type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      refcount="1" id="3"><field value="0" type="System.Int32" id="wpOne" /><field
-      value="1" type="System.Int32" id="wpTwo" /><field value="True" type="System.Boolean"
-      id="twoWay" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="4"><field value="" type="System.String" id="waypointName" /><field
-      value="28.47433,0,19.76923" type="UnityEngine.Vector3" id="position" /><field
-      value="0.5" type="System.Single" id="range" /></reference><reference type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      refcount="1" id="5"><field value="1" type="System.Int32" id="wpOne" /><field
-      value="2" type="System.Int32" id="wpTwo" /><field value="True" type="System.Boolean"
-      id="twoWay" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="6"><field value="" type="System.String" id="waypointName" /><field
-      value="30.19713,0,9.264187" type="UnityEngine.Vector3" id="position" /><field
-      value="0.5" type="System.Single" id="range" /></reference><reference type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      refcount="1" id="7"><field value="2" type="System.Int32" id="wpOne" /><field
-      value="3" type="System.Int32" id="wpTwo" /><field value="True" type="System.Boolean"
-      id="twoWay" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="8"><field value="" type="System.String" id="waypointName" /><field
-      value="18.33017,5.3,12.62374" type="UnityEngine.Vector3" id="position" /><field
-      value="0.5" type="System.Single" id="range" /></reference><reference type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      refcount="1" id="9"><field value="3" type="System.Int32" id="wpOne" /><field
-      value="4" type="System.Int32" id="wpTwo" /><field value="True" type="System.Boolean"
-      id="twoWay" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="10"><field value="" type="System.String" id="waypointName"
-      /><field value="10.96447,0,12.62374" type="UnityEngine.Vector3" id="position"
-      /><field value="0.5" type="System.Single" id="range" /></reference><reference
-      type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection" refcount="1"
-      id="11"><field value="4" type="System.Int32" id="wpOne" /><field value="5" type="System.Int32"
-      id="wpTwo" /><field value="True" type="System.Boolean" id="twoWay" /></reference><reference
-      type="RAIN.Navigation.Waypoints.Waypoint" refcount="1" id="12"><field value=""
-      type="System.String" id="waypointName" /><field value="10.96447,0,15.57454"
-      type="UnityEngine.Vector3" id="position" /><field value="0.5" type="System.Single"
-      id="range" /></reference><reference type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection"
-      refcount="1" id="13"><field value="5" type="System.Int32" id="wpOne" /><field
-      value="6" type="System.Int32" id="wpTwo" /><field value="True" type="System.Boolean"
-      id="twoWay" /></reference><reference type="RAIN.Navigation.Waypoints.Waypoint"
-      refcount="1" id="14"><field value="" type="System.String" id="waypointName"
-      /><field value="10.96447,0,18.92238" type="UnityEngine.Vector3" id="position"
-      /><field value="0.5" type="System.Single" id="range" /></reference><reference
-      type="RAIN.Navigation.Waypoints.WaypointSet+WaypointConnection" refcount="1"
-      id="15"><field value="6" type="System.Int32" id="wpOne" /><field value="7" type="System.Int32"
-      id="wpTwo" /><field value="True" type="System.Boolean" id="twoWay" /></reference></references></component>
-    _serializedGameObjects: []
-    _serializedCustomData: []
---- !u!4 &569832348
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 569832346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
 --- !u!1 &573723174
 GameObject:
   m_ObjectHideFlags: 0
@@ -9401,7 +9287,7 @@ Transform:
   - {fileID: 1008403340}
   - {fileID: 835191164}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!114 &662028996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11614,7 +11500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
 --- !u!1 &842215512
 GameObject:
   m_ObjectHideFlags: 0
@@ -11718,6 +11604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombIcon: {fileID: 2800000, guid: 61ea227f17f3b4c7496cf2e554617bb1, type: 3}
   dirtIcon: {fileID: 2800000, guid: 24feccb36d5644e81bfe04033f9bb14d, type: 3}
+  level: 1
 --- !u!4 &847029661
 Transform:
   m_ObjectHideFlags: 0
@@ -11729,7 +11616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
 --- !u!1001 &858849550
 Prefab:
   m_ObjectHideFlags: 0
@@ -12526,7 +12413,6 @@ GameObject:
   - 114: {fileID: 899332241}
   - 114: {fileID: 899332240}
   - 114: {fileID: 899332239}
-  - 114: {fileID: 899332245}
   m_Layer: 0
   m_Name: unitychan_dynamic_locomotion
   m_TagString: Untagged
@@ -12550,10 +12436,10 @@ Transform:
   - {fileID: 1552867260}
   - {fileID: 1022491975}
   - {fileID: 1332089988}
-  - {fileID: 1607250114}
-  - {fileID: 1476604306}
-  - {fileID: 518824771}
   - {fileID: 1836218605}
+  - {fileID: 1607250114}
+  - {fileID: 518824771}
+  - {fileID: 1476604306}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &899332239
@@ -12653,22 +12539,6 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &899332245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 899332237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f788bdc975924d042b61effd2e12cb4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  deathClip: {fileID: 8300000, guid: d7c4040670e28478fbd49fd9b6060ac8, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: .100000001}
 --- !u!1 &903056372
 GameObject:
   m_ObjectHideFlags: 0
@@ -20134,7 +20004,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 899332238}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!114 &1476604307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22793,7 +22663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 899332238}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &1608322027
 GameObject:
   m_ObjectHideFlags: 0
@@ -25501,7 +25371,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 899332238}
-  m_RootOrder: 9
+  m_RootOrder: 6
 --- !u!114 &1836218606
 MonoBehaviour:
   m_ObjectHideFlags: 0
