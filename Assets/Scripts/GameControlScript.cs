@@ -48,6 +48,10 @@ public class GameControlScript : MonoBehaviour {
 		isFinishReached = true;
 	}
 
+	public void reduceHealth(int ammount){
+		Health -= ammount;
+	}
+
 	void OnGUI () {
 		// Timer
 		GUI.Label (new Rect (5, 5, 200, 50), "<size=20>SCORE\n"+Score+"</size>");

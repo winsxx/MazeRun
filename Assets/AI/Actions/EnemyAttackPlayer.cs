@@ -5,17 +5,19 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class EnemyCustomActionTest : RAINAction
+public class EnemyAttackPlayer : RAINAction
 {
+	public GameControlScript control;
 
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+		control = GameObject.Find ("GameControl").GetComponent<GameControlScript> ();
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		MonoBehaviour.Destroy (ai.Body);
+		control.reduceHealth (20);
         return ActionResult.SUCCESS;
     }
 

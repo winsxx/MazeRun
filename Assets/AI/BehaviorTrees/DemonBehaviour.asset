@@ -52,10 +52,17 @@ MonoBehaviour:
       facetarget=&quot;&quot; debugbreak=&quot;False&quot; closeenoughdistance=&quot;&quot;
       closeenoughangle=&quot;&quot; /&gt;&lt;/parallel&gt;&lt;/constraint&gt;&lt;constraint
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;heroClose&quot; debugbreak=&quot;False&quot;
-      constraint=&quot;varHeroClose != null&quot;&gt;&lt;animate repeatuntil=&quot;&quot;
+      constraint=&quot;varHeroClose != null&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; name=&quot;parallel&quot; debugbreak=&quot;False&quot;&gt;&lt;parallel
+      tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      repeatuntil=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot;
+      namespace=&quot;(global)&quot; name=&quot;action&quot; debugbreak=&quot;False&quot;
+      classname=&quot;EnemyAttackPlayer&quot; /&gt;&lt;animate repeatuntil=&quot;&quot;
       name=&quot;animate&quot; debugbreak=&quot;False&quot; animationstate=&quot;Attack&quot;
-      /&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;constraint repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;healthZero&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;/parallel&gt;&lt;timer waitforsec=&quot;0.2&quot; returnvalue=&quot;success&quot;
+      priority=&quot;&quot; name=&quot;timer&quot; debugbreak=&quot;False&quot; /&gt;&lt;/sequencer&gt;&lt;/constraint&gt;&lt;/selector&gt;&lt;/constraint&gt;&lt;constraint
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;healthZero&quot; debugbreak=&quot;False&quot;
       constraint=&quot;myHealth &amp;lt;= 0 &quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;animate
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;animate-death&quot;
