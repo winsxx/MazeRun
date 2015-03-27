@@ -73,7 +73,6 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
-    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1001 &1463543
 Prefab:
@@ -9149,7 +9148,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11466118, guid: f9eeef348f1c30d43815d472de59ed6d, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445536, guid: f9eeef348f1c30d43815d472de59ed6d, type: 2}
+      propertyPath: WhityBomb
+      value: 
+      objectReference: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
+    m_RemovedComponents:
+    - {fileID: 11466118, guid: f9eeef348f1c30d43815d472de59ed6d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f9eeef348f1c30d43815d472de59ed6d, type: 2}
   m_RootGameObject: {fileID: 899332237}
   m_IsPrefabParent: 0
@@ -12527,6 +12535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bomb: {fileID: 128410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
   Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
+  WhityBomb: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
 --- !u!1 &903056372
 GameObject:
   m_ObjectHideFlags: 0
