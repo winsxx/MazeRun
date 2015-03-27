@@ -9153,7 +9153,7 @@ Transform:
   m_Children:
   - {fileID: 979659929}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &651251658
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,6 +12440,7 @@ Transform:
   - {fileID: 1607250114}
   - {fileID: 518824771}
   - {fileID: 1476604306}
+  - {fileID: 1387975474}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &899332239
@@ -19213,6 +19214,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 393494380}
   m_RootOrder: 0
+--- !u!1 &1387975473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1387975474}
+  - 114: {fileID: 1387975475}
+  m_Layer: 0
+  m_Name: ShotPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387975474
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387975473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: .39199999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 899332238}
+  m_RootOrder: 10
+--- !u!114 &1387975475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387975473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fa38e3d365fc74482882796f66314a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicBall: {fileID: 135012, guid: 954b977afe9745048be3ba78506738d0, type: 2}
+  spawnDistance: 0
+  delay: 10
 --- !u!1001 &1388422228
 Prefab:
   m_ObjectHideFlags: 0
@@ -22579,7 +22622,7 @@ Transform:
   m_Children:
   - {fileID: 493339003}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &1607250109
 GameObject:
   m_ObjectHideFlags: 0
