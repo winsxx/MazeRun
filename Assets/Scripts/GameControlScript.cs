@@ -10,6 +10,7 @@ public class GameControlScript : MonoBehaviour {
 	private int coinCount;
 	public Texture bombIcon;
 	public Texture dirtIcon;
+	public int level;
 	private bool isFinishReached;
 
 	// Use this for initialization
@@ -26,8 +27,9 @@ public class GameControlScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		gameTime -= Time.deltaTime;
-		if (gameTime == 0 || isFinishReached == true || Health==0) {
+		if (gameTime <= 0 || isFinishReached == true || Health==0) {
 			print ("GAME OVER");
+			PersistentScore.addHighScore(level,Score);
 		}
 	}
 
@@ -46,6 +48,10 @@ public class GameControlScript : MonoBehaviour {
 
 	public void finishTrophyCollected() {
 		isFinishReached = true;
+	}
+
+	public void reduceHealth(int ammount){
+		Health -= ammount;
 	}
 
 	void OnGUI () {

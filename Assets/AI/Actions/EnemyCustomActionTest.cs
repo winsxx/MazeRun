@@ -7,6 +7,7 @@ using RAIN.Core;
 [RAINAction]
 public class EnemyCustomActionTest : RAINAction
 {
+
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);

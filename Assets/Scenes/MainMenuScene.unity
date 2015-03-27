@@ -203,6 +203,7 @@ GameObject:
   - 223: {fileID: 674778850}
   - 114: {fileID: 674778849}
   - 114: {fileID: 674778848}
+  - 114: {fileID: 674778851}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -282,6 +283,19 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &674778851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674778846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c86f989ae3ab9a4694858711caff32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highscoreLv1: {fileID: 778162650}
+  highscoreLv2: {fileID: 2078375486}
 --- !u!1 &691085988
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +373,7 @@ GameObject:
   - 222: {fileID: 778162651}
   - 114: {fileID: 778162650}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: ScoreText1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,7 +1021,7 @@ GameObject:
   - 222: {fileID: 2078375487}
   - 114: {fileID: 2078375486}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: ScoreText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -19,7 +19,7 @@ namespace UnityChan
 		private Animator anim;						// Animatorへの参照
 		private AnimatorStateInfo currentState;		// 現在のステート状態を保存する参照
 		private AnimatorStateInfo previousState;	// ひとつ前のステート状態を保存する参照
-		public bool _random = false;				// ランダム判定スタートスイッチ
+		public bool _random = false;				// ランダム判定スタートスイッチ        
 		//public float _threshold = 0.5f;				// ランダム判定の閾値
 		//public float _interval = 10f;				// ランダム判定のインターバル
 		//private float _seed = 0.0f;					// ランダム判定用シード
