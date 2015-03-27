@@ -5331,7 +5331,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bomb: {fileID: 128410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
   Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
-  WhityBomb: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
 --- !u!114 &11449678
 MonoBehaviour:
   m_ObjectHideFlags: 1
