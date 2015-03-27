@@ -3,24 +3,29 @@ using System.Collections;
 
 public class ShotMagicController : MonoBehaviour {
 	public GameObject magicBall;
-	public float spawnDistance = 1.0f;
-	public float delay = 1000000f;
-	private float currentDelay = 0;
+	public int damagePerShot = 25;
+	public float timeBetweenBullets = 100f;
+	private static bool able;
 
+	private float timer;
 	// Use this for initialization
 	void Start () {
-		currentDelay = 0;
+		able = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButton ("Jump") && currentDelay <= 0.001) {
+		if (!able) {
+			timer-=Time.deltaTime;
+			if(timer<=0){
+				able=true;
+			}
+		}
+		if (Input.GetButton ("Jump") && able) {
 			ShotMagic();
-			currentDelay = delay;
+			timer=timeBetweenBullets;
+			able=false;
 		}	
-		currentDelay -= Time.deltaTime;
-		if (currentDelay < 0)
-			delay = 0;
 	}
 
 	void ShotMagic(){
