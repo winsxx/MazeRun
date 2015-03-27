@@ -1541,7 +1541,7 @@ GameObject:
   - 114: {fileID: 11449744}
   - 114: {fileID: 11449746}
   - 114: {fileID: 11449748}
-  - 114: {fileID: 11449742}
+  - 114: {fileID: 11445536}
   m_Layer: 0
   m_Name: unitychan_dynamic_locomotion
   m_TagString: Untagged
@@ -3074,7 +3074,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 449640}
-  m_RootOrder: 9
+  m_RootOrder: 6
 --- !u!4 &449496
 Transform:
   m_ObjectHideFlags: 1
@@ -3229,7 +3229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449640}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!4 &449520
 Transform:
   m_ObjectHideFlags: 1
@@ -3430,7 +3430,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449640}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!4 &449552
 Transform:
   m_ObjectHideFlags: 1
@@ -4027,10 +4027,10 @@ Transform:
   - {fileID: 449530}
   - {fileID: 449616}
   - {fileID: 449576}
-  - {fileID: 449518}
-  - {fileID: 449550}
-  - {fileID: 449706}
   - {fileID: 449494}
+  - {fileID: 449518}
+  - {fileID: 449706}
+  - {fileID: 449550}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &449642
@@ -5318,6 +5318,19 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11445536
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 927d6081e186a8e429802547066f9151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bomb: {fileID: 128410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
+  Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
 --- !u!114 &11449678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5978,22 +5991,6 @@ MonoBehaviour:
   colliders: []
   debug: 1
   threshold: .00999999978
---- !u!114 &11449742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f788bdc975924d042b61effd2e12cb4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  deathClip: {fileID: 8300000, guid: d7c4040670e28478fbd49fd9b6060ac8, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: .100000001}
 --- !u!114 &11449744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6042,8 +6039,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _random: 0
-  Dirt: {fileID: 459402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
-  Bomb: {fileID: 428410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
 --- !u!114 &11449750
 MonoBehaviour:
   m_ObjectHideFlags: 1
