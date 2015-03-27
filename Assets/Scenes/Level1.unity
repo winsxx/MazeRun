@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1001 &1463543
 Prefab:
@@ -9080,7 +9081,7 @@ Transform:
   m_Children:
   - {fileID: 979659929}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &651251658
 GameObject:
   m_ObjectHideFlags: 0
@@ -16302,6 +16303,8 @@ GameObject:
   - 4: {fileID: 1192684003}
   - 111: {fileID: 1192684004}
   - 136: {fileID: 1192684005}
+  - 136: {fileID: 1192684007}
+  - 114: {fileID: 1192684006}
   m_Layer: 0
   m_Name: demon
   m_TagString: Enemy
@@ -16357,6 +16360,30 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .0700000003
+  m_Height: .5
+  m_Direction: 1
+  m_Center: {x: 0, y: .270000011, z: 0}
+--- !u!114 &1192684006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192684002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2a0067f01a53f4384ca4e03726727a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &1192684007
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192684002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .0900000036
   m_Height: .5
   m_Direction: 1
   m_Center: {x: 0, y: .270000011, z: 0}
@@ -19240,8 +19267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magicBall: {fileID: 135012, guid: 954b977afe9745048be3ba78506738d0, type: 2}
-  spawnDistance: 0
-  delay: 10
+  damagePerShot: 25
+  timeBetweenBullets: .150000006
 --- !u!1001 &1388422228
 Prefab:
   m_ObjectHideFlags: 0
@@ -22609,7 +22636,7 @@ Transform:
   m_Children:
   - {fileID: 493339003}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1607250109
 GameObject:
   m_ObjectHideFlags: 0
@@ -26138,10 +26165,10 @@ MonoBehaviour:
       id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
       id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
-      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
+      id="_workingMemory" childrenvisible="True" /><field type="RAIN.Minds.BasicMind"
       reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
       reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.BasicAnimator"
-      reference="4" id="_animator" childrenvisible="True" /><field type="RAIN.Navigation.BasicNavigator"
+      reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
       reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
       reference="6" id="_senses" childrenvisible="False" /><field type="System.Collections.Generic.List"
       id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
