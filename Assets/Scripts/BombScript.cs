@@ -7,6 +7,7 @@ public class BombScript : MonoBehaviour {
 	private float floatTime = 0F;
 	private float floatDistance = .01F;
 	private float rotateSpeed = 4F;
+    private float timer = 5.0f;
 	private GameControlScript control;
 	
 	// Use this for initialization
