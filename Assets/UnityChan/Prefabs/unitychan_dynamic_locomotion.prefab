@@ -6042,6 +6042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _random: 0
+  Dirt: {fileID: 459402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
+  Bomb: {fileID: 428410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
 --- !u!114 &11449750
 MonoBehaviour:
   m_ObjectHideFlags: 1
