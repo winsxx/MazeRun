@@ -23,8 +23,11 @@ public class BombScript : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		control.bombCollected ();
-		Destroy (this.gameObject);
+        if (other.tag == "Player")
+        {
+            control.bombCollected();
+            Destroy(this.gameObject);
+        }
 	}
 }
 

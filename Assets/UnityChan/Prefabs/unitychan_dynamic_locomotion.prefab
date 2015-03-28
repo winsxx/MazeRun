@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &105578
+--- !u!1 &145866
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 405578}
-  - 114: {fileID: 11405578}
+  - 4: {fileID: 445866}
+  - 114: {fileID: 11445868}
   m_Layer: 0
   m_Name: ShotPoint
   m_TagString: Untagged
@@ -1558,6 +1558,7 @@ GameObject:
   - 114: {fileID: 11449746}
   - 114: {fileID: 11449748}
   - 114: {fileID: 11445536}
+  - 114: {fileID: 11445866}
   m_Layer: 0
   m_Name: unitychan_dynamic_locomotion
   m_TagString: Untagged
@@ -2774,14 +2775,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &405578
+--- !u!4 &445866
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105578}
+  m_GameObject: {fileID: 145866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: .39199999}
+  m_LocalPosition: {x: 0, y: 1.08500004, z: .270000458}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449640}
@@ -4059,7 +4060,7 @@ Transform:
   - {fileID: 449518}
   - {fileID: 449706}
   - {fileID: 449550}
-  - {fileID: 405578}
+  - {fileID: 445866}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &449642
@@ -5347,20 +5348,6 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11405578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43fa38e3d365fc74482882796f66314a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magicBall: {fileID: 135012, guid: 954b977afe9745048be3ba78506738d0, type: 2}
-  damagePerShot: 25
-  timeBetweenBullets: .150000006
 --- !u!114 &11445536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5375,6 +5362,32 @@ MonoBehaviour:
   Bomb: {fileID: 128410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
   Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
   WhityBomb: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
+  speed: 100
+--- !u!114 &11445866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328cae8802ed43748b6b749b0191120b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11445868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fa38e3d365fc74482882796f66314a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicBall: {fileID: 135012, guid: 954b977afe9745048be3ba78506738d0, type: 2}
+  timeBetweenBullets: 1
+  attakDelay: .800000012
 --- !u!114 &11449678
 MonoBehaviour:
   m_ObjectHideFlags: 1
