@@ -30,7 +30,7 @@ MonoBehaviour:
       constraint=&quot;varHeroNearby == null &amp;amp;&amp;amp; myHealth&amp;gt;0&quot;&gt;&lt;parallel
       tiebreaker=&quot;fail&quot; succeed=&quot;all&quot; repeatuntil=&quot;&quot;
       name=&quot;parallel&quot; fail=&quot;any&quot; debugbreak=&quot;False&quot;&gt;&lt;waypointpatrol
-      waypointsetvariable=&quot;PatrolRoute&quot; waypointactiontype=&quot;patrol&quot;
+      waypointsetvariable=&quot;PatrolRoute4&quot; waypointactiontype=&quot;patrol&quot;
       traversetype=&quot;pingpong&quot; traverseorder=&quot;forward&quot; repeatuntil=&quot;&quot;
       pathtargetvariable=&quot;&quot; name=&quot;patrol&quot; movetargetvariable=&quot;nextStop&quot;
       debugbreak=&quot;False&quot;&gt;&lt;move turnspeed=&quot;&quot; repeatuntil=&quot;&quot;
