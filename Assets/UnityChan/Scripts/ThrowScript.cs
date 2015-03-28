@@ -27,7 +27,7 @@ public class ThrowScript : MonoBehaviour {
                 bom.GetComponent<Rigidbody>().useGravity = true;
                 bom.GetComponent<Rigidbody>().AddForce(transform.forward * 80.0f, ForceMode.Force);
                 StartCoroutine(efekLedak(1f, posisi_skrg));
-                Destroy(bom, 5);
+                Destroy(bom, 4);
             }            
         }
         else if (Input.GetButton("Fire2"))
