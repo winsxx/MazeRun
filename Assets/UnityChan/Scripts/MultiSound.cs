@@ -6,19 +6,17 @@ public class MultiSound : MonoBehaviour {
 	// define the audio clips: 
 	public AudioClip clipStart;
 	public AudioClip clipStart2;
-	public AudioClip clipRun;
-	public AudioClip clipJump;
-	public AudioClip clipRest;
+	public AudioClip clipRun;		
 	public AudioClip clipWin;
 	public AudioClip clipLost;
+    public AudioClip clipExplosion;
 	
 	private AudioSource audioStart;
 	private AudioSource audioStart2;
 	private AudioSource audioRun;
-	private AudioSource audioJump;
-	private AudioSource audioRest;
 	private AudioSource audioWin;
 	private AudioSource audioLost;
+    private AudioSource audioExplosion;
 	
 	private bool is_play_parent;
 	private bool is_play_child;
@@ -35,10 +33,9 @@ public class MultiSound : MonoBehaviour {
 		audioStart2 = AddAudio(clipStart2);
 		audioRun = AddAudio(clipRun);
 		audioRun.loop = true;
-		audioJump = AddAudio(clipJump);
-		audioRest = AddAudio(clipRest);
 		audioWin = AddAudio(clipWin);
 		audioLost = AddAudio(clipLost);
+        audioExplosion = AddAudio(clipExplosion);
 		is_play_child = false;
 	}
 	
@@ -59,18 +56,10 @@ public class MultiSound : MonoBehaviour {
 		}
 	}
 	
-	public void Jump(){
-		audioJump.Play();
-	}
-	
 	public void SetRun(bool isrun){
 		if (isrun) audioRun.Play();
 		else audioRun.Stop();
-	}
-	
-	public void Rest(){
-		audioRest.Play();
-	}
+	}	
 	
 	public void Win(){
 		audioWin.Play();
@@ -79,4 +68,9 @@ public class MultiSound : MonoBehaviour {
 	public void Lost(){
 		audioLost.Play();
 	}
+
+    public void Explosion()
+    {
+        audioExplosion.Play();
+    }
 }
