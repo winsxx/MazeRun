@@ -27,7 +27,7 @@ public class GameControlScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		gameTime -= Time.deltaTime;
-		if (gameTime <= 0 || isFinishReached == true || Health==0) {
+		if (gameTime <= 0 || isFinishReached == true || Health<=0) {
 			GameOver();
 		}
 	}
