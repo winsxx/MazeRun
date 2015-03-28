@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+
 public class ThrowScript : MonoBehaviour {
     public GameObject Bomb;
     public GameObject Dirt;
@@ -13,11 +15,12 @@ public class ThrowScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButton("Fire1"))
+        /*if (Input.GetButton("Fire1"))
         {
             if (control.getTotBomb() > 0)
             {
                 control.bombUsed();
+                Console.WriteLine("Jmlh Bomb skrg : " + control.getTotBomb());
                 Vector3 posisi_skrg = transform.position + 7.0f * transform.forward;
                 GameObject bom = Instantiate(Bomb, posisi_skrg, transform.rotation) as GameObject;
                 StartCoroutine(efekLedak(4.5f, posisi_skrg));
@@ -31,7 +34,7 @@ public class ThrowScript : MonoBehaviour {
                 control.dirtUsed();
                 Instantiate(Dirt, transform.position + 7.0f * transform.forward, transform.rotation);
             }            
-        }
+        }*/
 	}
 
     IEnumerator efekLedak(float waktu,Vector3 posisi)
