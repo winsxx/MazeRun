@@ -1,12 +1,7 @@
-Winson
-	- Musuh
-	- Player tambah laser untuk serang
-	- menyimpan dan menampilkan highscore
-
-Edmund
-	- Kumpulkan bomb dan batu termasuk taro objeknya (masuk ke inventori)
-	- Akhir game (kondisi akhir + game offer: darah=0, waktu habis, atau sampai finish, hitung score)
-
-Kevin
-	- Lempar batu, bomb (sama damage dan effect)
-	- Sound Effect + music
+- Sound Effect dan Music
+- Level 2 sesuaikan dengan level 1 (tambah asset)
+- Tambahkan tanda di minimap supaya lebih mudah nampak finish
+- Level 1 Setting posisi Musuh dengan baik dengan jumlah yang sesuai
+- Sesuaikan tinggi lokasi asset bomb dan tanah supaya bisa terambil
+- Tambah reset highscore - (winson)
+- Kasih cadangan batu dan bomb?
