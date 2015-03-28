@@ -7,10 +7,11 @@ public class CoinScript : MonoBehaviour {
 	private float floatDistance = .01F;
 	private float rotateSpeed = 4F;
 	private GameControlScript control;
+    public AudioClip clipCoin;    
 
 	// Use this for initialization
 	void Start () {
-		control = GameObject.Find ("GameControl").GetComponent<GameControlScript> ();
+		control = GameObject.Find ("GameControl").GetComponent<GameControlScript> ();        
 	}
 	
 	// Update is called once per frame
@@ -22,7 +23,11 @@ public class CoinScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		control.coinCollected ();
-		Destroy (this.gameObject);
+        if (other.tag == "Player")
+        {
+            control.coinCollected();
+            AudioSource.PlayClipAtPoint(clipCoin, transform.position);
+            Destroy(this.gameObject);
+        }     
 	}
 }

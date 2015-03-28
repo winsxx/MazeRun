@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445866}
   - 114: {fileID: 11445868}
-  - 114: {fileID: 11416646}
+  - 114: {fileID: 11430300}
   m_Layer: 0
   m_Name: ShotPoint
   m_TagString: Untagged
@@ -1364,7 +1364,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449618}
-  - 136: {fileID: 13616646}
+  - 136: {fileID: 13630300}
   m_Layer: 0
   m_Name: Character1_Reference
   m_TagString: Player
@@ -1540,7 +1540,6 @@ GameObject:
   - 114: {fileID: 11449744}
   - 114: {fileID: 11449746}
   - 114: {fileID: 11449748}
-  - 114: {fileID: 11445536}
   - 114: {fileID: 11445866}
   m_Layer: 0
   m_Name: unitychan_dynamic_locomotion
@@ -3082,8 +3081,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.90999937, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -.289999992, y: 6.90999985, z: 0}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 449640}
   m_RootOrder: 6
@@ -5070,7 +5069,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294963199
+    m_Bits: 4294962943
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5272,7 +5271,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11416646
+--- !u!114 &11430300
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5287,21 +5286,8 @@ MonoBehaviour:
   Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
   WhityBomb: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
   speed: 100
---- !u!114 &11445536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149640}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 927d6081e186a8e429802547066f9151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bomb: {fileID: 128410, guid: c311c2ce66b064d8780c6a62bd6ec565, type: 2}
-  Dirt: {fileID: 159402, guid: ec62e3446f8e2439699bbc77a75c67de, type: 2}
-  WhityBomb: {fileID: 100010, guid: 4d0391f078db24fac9f5cba3075f9f5d, type: 2}
-  speed: 100
+  timeBetweenAction: 1
+  clipExplosion: {fileID: 8300000, guid: 68ce313613db40449855b23ec15370c8, type: 3}
 --- !u!114 &11445866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6018,11 +6004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clipStart: {fileID: 8300000, guid: 99a3b02904f254289a782ecf8e3063e2, type: 3}
   clipStart2: {fileID: 8300000, guid: b5b28ddf9a8dd4df9af0857e990f03d9, type: 3}
-  clipRun: {fileID: 8300000, guid: 23b4a85d442dc4abb8d2c6559b135c3c, type: 3}
-  clipJump: {fileID: 8300000, guid: 6ccbc3d284bd849d49fb1f8f94ab2888, type: 3}
-  clipRest: {fileID: 8300000, guid: 367b2123e41784547b5f532db4781029, type: 3}
+  clipRun: {fileID: 0}
   clipWin: {fileID: 8300000, guid: 48f945eaabaa941da8b22c03b441664a, type: 3}
   clipLost: {fileID: 8300000, guid: d7c4040670e28478fbd49fd9b6060ac8, type: 3}
+  clipExplosion: {fileID: 8300000, guid: 68ce313613db40449855b23ec15370c8, type: 3}
 --- !u!114 &11449748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6548,7 +6533,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &13616646
+--- !u!136 &13630300
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
