@@ -2,19 +2,13 @@
 using System.Collections;
 
 public class MagicBulletController : MonoBehaviour {
-	public float maxRange = 5f;
-	public float speed = 100f;
-	private float currentRange;
+	public float maxLifetime;
+	public float speed;
 
 	// Use this for initialization
 	void Start () {
-		currentRange = 0f;
 		rigidbody.velocity = transform.TransformDirection ( new Vector3 (0, 0, speed));
-		Destroy (this.gameObject, 5);
+		Destroy (this.gameObject, maxLifetime);
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-	}
 }

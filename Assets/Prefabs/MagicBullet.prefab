@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d739ab5393b7f674ea2fb44d3602c886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRange: 2
+  maxLifetime: 3
   speed: 100
 --- !u!135 &13559956
 SphereCollider:
@@ -164,7 +164,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .25
+  m_Radius: .400000006
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &19835010
 ParticleSystem:

@@ -3,8 +3,9 @@ using System.Collections;
 
 public class ShotMagicController : MonoBehaviour {
 	public GameObject magicBall;
-	public int damagePerShot = 25;
-	public float timeBetweenBullets = 100f;
+	public int damagePerShot;
+	public float timeBetweenBullets;
+	public float attakDelay;
 	private static bool able;
 
 	private float timer;
@@ -22,6 +23,9 @@ public class ShotMagicController : MonoBehaviour {
 			}
 		}
 		if (Input.GetButton ("Jump") && able) {
+			float temp = attakDelay;
+			while(temp > 0)
+				temp-=Time.deltaTime;
 			ShotMagic();
 			timer=timeBetweenBullets;
 			able=false;
