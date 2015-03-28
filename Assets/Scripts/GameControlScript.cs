@@ -53,6 +53,26 @@ public class GameControlScript : MonoBehaviour {
 		Health -= ammount;
 	}
 
+    public void bombUsed()
+    {
+        bombCount--;
+    }
+
+    public void dirtUsed()
+    {
+        dirtCount--;
+    }
+
+    public int getTotBomb()
+    {
+        return bombCount;
+    }
+
+    public int getTotDirt()
+    {
+        return dirtCount;
+    }
+
 	void OnGUI () {
 		// Timer
 		GUI.Label (new Rect (5, 5, 200, 50), "<size=20>SCORE\n"+Score+"</size>");
