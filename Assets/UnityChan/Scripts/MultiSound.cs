@@ -10,6 +10,7 @@ public class MultiSound : MonoBehaviour {
 	public AudioClip clipWin;
 	public AudioClip clipLost;
     public AudioClip clipExplosion;
+    public AudioClip clipBGM;
 	
 	private AudioSource audioStart;
 	private AudioSource audioStart2;
@@ -17,8 +18,8 @@ public class MultiSound : MonoBehaviour {
 	private AudioSource audioWin;
 	private AudioSource audioLost;
     private AudioSource audioExplosion;
-	
-	private bool is_play_parent;
+    private AudioSource audioBGM;
+		
 	private bool is_play_child;
 	
 	AudioSource AddAudio(AudioClip clip){
@@ -36,7 +37,8 @@ public class MultiSound : MonoBehaviour {
 		audioWin = AddAudio(clipWin);
 		audioLost = AddAudio(clipLost);
         audioExplosion = AddAudio(clipExplosion);
-		is_play_child = false;
+        audioBGM = AddAudio(clipBGM);
+		is_play_child = false;        
 	}
 	
 	// Use this for initialization
@@ -52,8 +54,11 @@ public class MultiSound : MonoBehaviour {
 			} else {
 				is_play_child = true;
 				audioStart2.PlayDelayed(1f);
+                audioBGM.loop = true;
+                audioBGM.volume = 0.3f;
+                audioBGM.PlayDelayed(3.08f);               
 			}
-		}
+		}        
 	}
 	
 	public void SetRun(bool isrun){
