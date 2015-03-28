@@ -22,7 +22,7 @@ public class ThrowScript : MonoBehaviour {
             {
                 control.bombUsed();
                 //Console.WriteLine("Jmlh Bomb skrg : " + control.getTotBomb());
-                Vector3 posisi_skrg = transform.position - new Vector3(0,1f,0) + 7.5f * transform.forward;
+                Vector3 posisi_skrg = transform.position - new Vector3(0,1f,0) + 8f * transform.forward;
                 GameObject bom = Instantiate(Bomb, transform.position + transform.forward, transform.rotation) as GameObject;
                 bom.GetComponent<Rigidbody>().useGravity = true;
                 bom.GetComponent<Rigidbody>().AddForce(transform.forward * 80.0f, ForceMode.Force);
