@@ -28,8 +28,7 @@ public class GameControlScript : MonoBehaviour {
 	void Update () {
 		gameTime -= Time.deltaTime;
 		if (gameTime <= 0 || isFinishReached == true || Health==0) {
-			print ("GAME OVER");
-			PersistentScore.addHighScore(level,Score);
+			GameOver();
 		}
 	}
 
@@ -70,5 +69,11 @@ public class GameControlScript : MonoBehaviour {
 		// Dirt
 		GUI.DrawTexture(new Rect (Screen.width-95, Screen.height-70, 90, 90), dirtIcon);
 		GUI.Label (new Rect (Screen.width - 60, Screen.height - 40, 100, 50), "<size=20>"+dirtCount+"</size>");
+	}
+
+	private void GameOver() {
+		PlayerPrefs.SetInt ("Score", Score);
+		PersistentScore.addHighScore(level,Score);
+		Application.LoadLevel (3);
 	}
 }
