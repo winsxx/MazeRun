@@ -15,7 +15,7 @@ public class GameControlScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		gameTime = 100;
+		gameTime = 120;
 		Score = 0;
 		Health = 100;
 		bombCount = 0;
@@ -93,7 +93,10 @@ public class GameControlScript : MonoBehaviour {
 
 	private void GameOver() {
 		PlayerPrefs.SetInt ("Score", Score);
-		PersistentScore.addHighScore(level,Score);
+		string finishStatus = isFinishReached ? "true" : "false";
+		PlayerPrefs.SetString ("finishStatus", finishStatus);
+		if(isFinishReached)
+			PersistentScore.addHighScore(level,Score);
 		Application.LoadLevel (3);
 	}
 }
