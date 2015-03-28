@@ -27,7 +27,7 @@ public class GameControlScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		gameTime -= Time.deltaTime;
-		if (gameTime <= 0 || isFinishReached == true || Health==0) {
+		if (gameTime <= 0 || isFinishReached == true || Health<=0) {
 			GameOver();
 		}
 	}
@@ -52,6 +52,26 @@ public class GameControlScript : MonoBehaviour {
 	public void reduceHealth(int ammount){
 		Health -= ammount;
 	}
+
+    public void bombUsed()
+    {
+        bombCount--;
+    }
+
+    public void dirtUsed()
+    {
+        dirtCount--;
+    }
+
+    public int getTotBomb()
+    {
+        return bombCount;
+    }
+
+    public int getTotDirt()
+    {
+        return dirtCount;
+    }
 
 	void OnGUI () {
 		// Timer

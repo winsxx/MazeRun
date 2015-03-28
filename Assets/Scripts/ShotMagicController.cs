@@ -3,7 +3,6 @@ using System.Collections;
 
 public class ShotMagicController : MonoBehaviour {
 	public GameObject magicBall;
-	public int damagePerShot;
 	public float timeBetweenBullets;
 	public float attakDelay;
 	private static bool able;

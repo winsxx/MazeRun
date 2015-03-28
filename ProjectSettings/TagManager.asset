@@ -5,6 +5,13 @@ TagManager:
   tags:
   - 
   - Bullet
+  - Hole
+  - Wall
+  - Coin
+  - BombableWall
+  - Enemy
+  - WhiteBomb
+  - Dirt
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

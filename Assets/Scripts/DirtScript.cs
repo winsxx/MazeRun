@@ -22,7 +22,10 @@ public class DirtScript : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		control.dirtCollected ();
-		Destroy (this.gameObject);
+        if (other.tag == "Player")
+        {
+            control.dirtCollected();
+            Destroy(this.gameObject);
+        }
 	}
 }

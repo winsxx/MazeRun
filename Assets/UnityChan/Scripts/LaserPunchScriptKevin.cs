@@ -16,39 +16,27 @@ namespace UnityChan
 	public class LaserPunchScriptKevin : MonoBehaviour
 	{
 	
-		private Animator anim;						// Animatorへの参照
-		private AnimatorStateInfo currentState;		// 現在のステート状態を保存する参照
-		private AnimatorStateInfo previousState;	// ひとつ前のステート状態を保存する参照
-		public bool _random = false;				// ランダム判定スタートスイッチ        
-		//public float _threshold = 0.5f;				// ランダム判定の閾値
-		//public float _interval = 10f;				// ランダム判定のインターバル
-		//private float _seed = 0.0f;					// ランダム判定用シード
-	
-
+		private Animator anim;						
+		private AnimatorStateInfo currentState;		
+		private AnimatorStateInfo previousState;	
+		public bool _random = false;				
 
 		// Use this for initialization
 		void Start ()
-		{
-			// 各参照の初期化
+		{			
 			anim = GetComponent<Animator> ();
 			currentState = anim.GetCurrentAnimatorStateInfo (0);
 			previousState = currentState;
-			// ランダム判定用関数をスタートする
-			//StartCoroutine ("RandomChange");
 		}
 	
 		// Update is called once per frame
 		void  Update ()
-		{
-			// ↑キー/スペースが押されたら、ステートを次に送る処理
-			if (Input.GetButton ("Jump")) {
-				// ブーリアンLaserPunchをtrueにする
+		{			
+			if (Input.GetButton ("Jump")) {				
 				anim.SetBool ("LaserPunch", true);
 			}		
-		
-			// "LaserPunch"フラグがtrueの時の処理
-			if (anim.GetBool ("LaserPunch")) {
-				// 現在のステートをチェックし、ステート名が違っていたらブーリアンをfalseに戻す
+					
+			if (anim.GetBool ("LaserPunch")) {				
 				currentState = anim.GetCurrentAnimatorStateInfo (0);
 				if (previousState.nameHash != currentState.nameHash) {
 					anim.SetBool ("LaserPunch", false);
@@ -56,27 +44,5 @@ namespace UnityChan
 				}
 			}
 		}
-
-		// ランダム判定用関数
-		/*IEnumerator RandomChange ()
-		{
-			// 無限ループ開始
-			while (true) {
-				//ランダム判定スイッチオンの場合
-				if (_random) {
-					// ランダムシードを取り出し、その大きさによってフラグ設定をする
-					float _seed = Random.Range (0.0f, 1.0f);
-					if (_seed < _threshold) {
-						anim.SetBool ("Back", true);
-					} else if (_seed >= _threshold) {
-						anim.SetBool ("LaserPunch", true);
-					}
-				}
-				// 次の判定までインターバルを置く
-				yield return new WaitForSeconds (_interval);
-			}
-
-		}*/
-
 	}
 }
