@@ -5,3 +5,9 @@
 - Sesuaikan tinggi lokasi asset bomb dan tanah supaya bisa terambil
 - Tambah reset highscore - (winson)
 - Kasih cadangan batu dan bomb?
+
+
+Presentasi:
+https://drive.google.com/file/d/0BwbxsXqtOai8VGFxaFNDaTdqa0k/view
+Dokumentasi:
+https://docs.google.com/document/d/1Ci0oc1s5fPZvVwZWFLOPPCbtcwYWBFz1Wsvi_LU4hsI/edit?usp=sharing
