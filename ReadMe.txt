@@ -1,0 +1,7 @@
+- Tekan tombol play untuk memainkan MazeRun
+- Pilih level yang ingin dimainkan level 1 atau level 2
+- Untuk bermain menggunakan keyboard, ikuti petunjuk dari Label Interaction
+- Untuk menggunakan bomb dan dirt, selain dengan keyboard, juga dapat menggunakan mouse yaitu left click dan right click
+- Gunakan bomb untuk menghancurkan batu karang, dirt untuk menutup lubang dan laserpunch untuk membunuh musuh.
+- Hindari terkena ledakan bomb dan musuh demi keselamatan Anda!!
+- Keluar dari Maze secepat mungkin sebelum waktu habis. Kumpulkan juga koin sebanyak mungkin untuk mendapatkan high score.
