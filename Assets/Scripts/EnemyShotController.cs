@@ -6,6 +6,7 @@ public class EnemyShotController : MonoBehaviour {
 
 	public GameObject attackEffectPrefab;
 	public int healthReducePerAttack;
+	public AudioSource sound;
 
 	AIRig rig = null;
 
@@ -24,6 +25,8 @@ public class EnemyShotController : MonoBehaviour {
 			int health = rig.AI.WorkingMemory.GetItem<int>("myHealth");
 			rig.AI.WorkingMemory.SetItem<int>("myHealth", health-healthReducePerAttack);
 
+			if(sound!=null)
+				sound.Play();
 			GameObject tempEffect = Instantiate(attackEffectPrefab,other.transform.position, Quaternion.identity) as GameObject;
 
 			Destroy(other.gameObject);
