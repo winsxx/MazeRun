@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GameControlScript : MonoBehaviour {
-	private float gameTime;
+	public float gameTime;
 	private int Score;
 	private int Health;
 	private int bombCount;
@@ -15,7 +15,6 @@ public class GameControlScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		gameTime = 120;
 		Score = 0;
 		Health = 100;
 		bombCount = 0;
