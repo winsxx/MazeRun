@@ -110,12 +110,12 @@ namespace UnityChan
 		void OnGUI ()
 		{
 			if (isStart){
-			GUI.Box (new Rect (Screen.width - 260, 160, 250, 210), "Interaction");
-			GUI.Label (new Rect (Screen.width - 245, 190, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
-			GUI.Label (new Rect (Screen.width - 245, 220, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
-			GUI.Label (new Rect (Screen.width - 245, 250, 250, 50), "Hit Space key while Stopping : LaserPunch");
-            GUI.Label(new Rect(Screen.width - 245, 300, 250, 30), "Hit Ctr key : LaserPunch");
-            GUI.Label(new Rect(Screen.width - 245, 330, 250, 30), "Hit Alt key : LaserPunch");
+			GUI.Box (new Rect (Screen.width - 260, 200, 250, 210), "Interaction");
+			GUI.Label (new Rect (Screen.width - 245, 230, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
+			GUI.Label (new Rect (Screen.width - 245, 260, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
+			GUI.Label (new Rect (Screen.width - 245, 290, 250, 50), "Hit Space key while Stopping : LaserPunch");
+            GUI.Label(new Rect(Screen.width - 245, 340, 250, 30), "Hit Ctr key : Fire Bomb");
+            GUI.Label(new Rect(Screen.width - 245, 370, 250, 30), "Hit Alt key : Throw Stone");
 			}
 		}
 		
