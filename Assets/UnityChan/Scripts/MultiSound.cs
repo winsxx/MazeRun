@@ -59,11 +59,11 @@ public class MultiSound : MonoBehaviour {
 				audioStart2.PlayDelayed(1f);
                 audioBGM.loop = true;
                 audioBGM.volume = 0.3f;
-                audioBGM.PlayDelayed(3.08f);               
+                audioBGM.PlayDelayed(3.08f);
 			}
 		}        
 	}
-	
+
 	public void SetRun(bool isrun){
 		if (isrun) audioRun.Play();
 		else audioRun.Stop();

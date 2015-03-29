@@ -11,7 +11,7 @@ public class GameControlScript : MonoBehaviour {
 	public Texture bombIcon;
 	public Texture dirtIcon;
 	public int level;
-	private bool isFinishReached;
+	private bool isFinishReached;    
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +20,7 @@ public class GameControlScript : MonoBehaviour {
 		bombCount = 0;
 		dirtCount = 0;
 		coinCount = 0;
-		isFinishReached = false;        
+		isFinishReached = false;             
 	}
 	
 	// Update is called once per frame
