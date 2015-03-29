@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour {
 	public Texture GameOverBackground;
+    //public AudioClip clipGameOver;
+    //public static AudioSource gameOverAudio;
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +12,6 @@ public class GameOver : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
 	void OnGUI() {

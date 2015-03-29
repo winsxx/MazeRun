@@ -20,7 +20,7 @@ public class GameControlScript : MonoBehaviour {
 		bombCount = 0;
 		dirtCount = 0;
 		coinCount = 0;
-		isFinishReached = false;
+		isFinishReached = false;        
 	}
 	
 	// Update is called once per frame

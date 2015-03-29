@@ -11,6 +11,7 @@ public class MultiSound : MonoBehaviour {
 	public AudioClip clipLost;
     public AudioClip clipExplosion;
     public AudioClip clipBGM;
+    public AudioClip clipEnemyAttack;
 	
 	private AudioSource audioStart;
 	private AudioSource audioStart2;
@@ -19,6 +20,7 @@ public class MultiSound : MonoBehaviour {
 	private AudioSource audioLost;
     private AudioSource audioExplosion;
     private AudioSource audioBGM;
+    private AudioSource audioEnemyAttack;
 		
 	private bool is_play_child;
 	
@@ -38,6 +40,7 @@ public class MultiSound : MonoBehaviour {
 		audioLost = AddAudio(clipLost);
         audioExplosion = AddAudio(clipExplosion);
         audioBGM = AddAudio(clipBGM);
+        audioEnemyAttack = AddAudio(clipEnemyAttack);
 		is_play_child = false;        
 	}
 	
@@ -77,5 +80,10 @@ public class MultiSound : MonoBehaviour {
     public void Explosion()
     {
         audioExplosion.Play();
+    }
+
+    public void EnemyAttack()
+    {
+        audioEnemyAttack.Play();
     }
 }

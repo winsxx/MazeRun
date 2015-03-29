@@ -83,7 +83,7 @@ public class ThrowScript : MonoBehaviour {
 
     IEnumerator lmprTanah()
     {
-        GameObject tanah = Instantiate(Dirt, transform.position + 1.25f * transform.forward, transform.rotation) as GameObject;
+        GameObject tanah = Instantiate(Dirt, transform.position + 1.5f * transform.forward, transform.rotation) as GameObject;
         tanah.GetComponent<Rigidbody>().useGravity = true;
         tanah.GetComponent<Rigidbody>().AddForce(transform.forward * 80.0f, ForceMode.Force);
         //control.dirtUsed();
